@@ -182,7 +182,7 @@ function viewMore(id){
             <th scope="row">${element.name}</th>
             <td>${element.gender}</td>
             <td>${element.titles.join(", ")}</td>
-            <td>${element.aliases.join(", ")}</td>
+            <td class="pr-4">${element.aliases.join(", ")}</td>
         </tr>
         `;
     });
