@@ -1,0 +1,129 @@
+/*
+ * This file contains the css styles for the project 'ICE AND FIRE API'
+ * Name         : style.css
+ * Author       : Goutham
+ * Language     : CSS 3
+ * Created on   : 24-07-2021
+ * Modified on  : 25-07-2021
+ */
+
+/* Styles for entire body */
+body{
+    background-image: url("background.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    min-height: 999px;
+}
+
+/* Styles for heading */
+.header-font{
+    font-family:'Courier New';
+    font-size: 4rem;
+}
+
+/* Styles for book card */
+.book{
+    background-image: linear-gradient(to top, rgb(255, 236, 173),rgb(231, 193, 121));
+    margin: 30px 0px;
+    width: 300px;
+    padding: 30px 5px;
+    height:fit-content;
+    color:rgb(114, 10, 10);
+    transition: transform 0.35s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+/* Styles for flipping the card */
+.book.is-flipped{
+    transform: rotateY(-180deg);
+}
+
+/* Styles for front face of the book card */
+.book-card{
+    background:transparent;
+    border: none;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+/* Styles for back face of the book card */
+.card-back{
+    position: absolute;
+    top: 0;
+    padding: 30px 5px;
+    transform: rotateY(180deg);
+}
+
+/* Styles for footer of the book card */
+.footer-card{
+    width: 100%;
+}
+
+.footer-item{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+/* Styles for on mouse hover */
+.fa{
+    cursor: pointer;
+    padding-bottom: 20px;
+}
+
+/* Styles for view characters button */
+.char-button{
+    color: inherit;
+    text-decoration:underline; 
+}
+
+.char-button:hover {
+    text-decoration: none;
+    color:inherit; 
+    cursor:pointer;  
+} 
+
+/* Styles for view more button */
+.view-more{
+    position: absolute;
+    bottom: 10px;
+    left: 115px;
+}
+
+/* Styles for the view more characters screen */
+.form {
+    position: absolute;
+    width: 100%;
+    max-width: 700px;
+    max-height: 500px;
+    padding: 15px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    background-color: rgb(255, 236, 173);
+}
+
+.tbody{
+    background-color: rgb(231, 193, 121);
+}
+
+.thead{
+    background-color: rgb(114, 10, 10);
+    color: white;
+}
+
+.close-button{
+    color: rgb(114, 10, 10);
+}
+
+.char-form{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    justify-content: center;
+    z-index: 1;
+}
